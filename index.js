@@ -7,7 +7,7 @@ const npc = newNonPlayableCharacter(50, 300)
 // have the NPC start walking east immediately
 function walkInLoop() {
     npc.walkEast(500)
-    .then(() => npc.walkNorth(1400))
+    npc.walkNorth(1400)
     .then(() => npc.walkEast(1200))
     .then(() => npc.walkSouth(300))
     .then(() => npc.walkEast(1500))
